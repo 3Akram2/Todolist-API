@@ -55,8 +55,8 @@ This project uses Prisma ORM for database management. Make sure you have the Pri
 
 
 Then  generate Prisma client:
-    ````bash
-      npx prisma generate
+   ```bash
+          npx prisma generate
     ````
   
 ## Installation
