@@ -14,7 +14,6 @@ export const register = async (req:Request,res:Response ) => {
         }
     })
     if(isUserAlreadyExists){
-        console.log('user already exists')
        return res.status(401).json({ msg:'user already exists' })
     }
     const encryptedPassword = await bcrypt.hash(password,10) 
