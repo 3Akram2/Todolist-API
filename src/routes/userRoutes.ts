@@ -1,10 +1,10 @@
 import express from 'express';
 import {getAllUserTodos,addTask,deleteTask,updateTask} from '../controllers/userController'; 
 const router = express.Router();
-router.get('/alltodos',getAllUserTodos)
-router.post('/addtask',addTask);
-router.delete('/deletetask/:id',deleteTask);
-router.patch('/updtask',updateTask);
+router.get('/todos',getAllUserTodos)
+router.post('/todos',addTask);
+router.delete('/todos/:id',deleteTask);
+router.patch('/todos',updateTask);
 
 
 
