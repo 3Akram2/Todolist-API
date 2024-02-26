@@ -6,6 +6,7 @@ Welcome to Todolist API! This README file will guide you through the setup proce
 Before you begin, make sure you have the following installed on your machine:
 
 - Node.js
+- nodemon
 - MongoDB
 - Prisma CLI
 
@@ -31,11 +32,13 @@ Before you begin, make sure you have the following installed on your machine:
 
 Before running the backend server, you need to set up the following environment variables:
 
-- `DATABASE_URL`: The connection string for your MongoDB database.
+- `DATABASE_URL`: The connection string for your MongoDB database. Make sure to include the database name at the end of the connection string.
+  Example: DATABASE_URL=mongodb+srv://<username>:<password>@<cluster>/<dbname>?retryWrites=true&w=majority
 - `JWT_SECRET`: The secret key used for JSON Web Token (JWT) authentication.
 - `PORT`: The port on which the backend server will run.
 
-DATABASE_URL=mongodb://localhost:27017/your-database
+
+DATABASE_URL=mongodb://localhost:27017/your-database 
 JWT_SECRET=your-secret-key
 PORT=3000
 
